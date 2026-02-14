@@ -1,0 +1,28 @@
+.free-fire{
+    background-color:red;
+    text-align:center;
+    padding:30px;
+    margin: 15px;
+    border:5px solid blue;
+  } 
+  .pubg{
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    margin:15px;
+    border: 5px solid blue;
+  }
+  .gta{
+    background-color: lightblue;
+    text-align: center;
+    padding: 30px;
+    margin:15px;
+    border: 5px solid blue;
+  }
+  .minecraft{
+    background-color: green;
+    text-align: center;
+    padding:30px;
+    margin:15px;
+    border:5px solid black;
+  }

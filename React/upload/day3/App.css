@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.Nav {
+  width: 100%;
+  background-color: #2d4b73;
+  color: white;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nav h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btnnow {
+  margin-left: 10px;
+  background-color: #ffdd57;
+  border: none;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btnnow:hover {
+  background-color: #ffe889;
+}
+
+.Navbar {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 45px;
+  cursor: pointer;
+}
+
+.NavContant {
+  display: flex;
+  gap: 30px;
+}
+
+.NavContant a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  transition: 0.3s ease;
+}
+
+.NavContant a:hover {
+  color: #007bff;
+}
+
+.newicons {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.newicons img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.newicons img:hover {
+  transform: scale(1.1);
+}
+
+.Banner {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.Banner img {
+  width: 90%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.Banner img:hover {
+  transform: scale(1.01);
+}
+
+@media (max-width: 900px) {
+  .NavContant {
+    gap: 15px;
+  }
+  .NavContant a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .Navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .NavContant {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .newicons {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Nav h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .btnnow {
+    padding: 5px 10px;
+  }
+  .Banner img {
+    width: 95%;
+  }
+}

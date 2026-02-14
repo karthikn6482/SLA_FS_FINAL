@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Company Registration</title>
+  </head>
+  <body>
+    <header>
+      <center>
+        <h1>Welcome to ABC Finance</h1>
+        <img src="assets/img/1.jpg" alt="Finance Company Logo" width="200" />
+      </center>
+    </header>
+
+    <main>
+      <section>
+        <p><strong>ABC Finance</strong> is committed to helping you achieve your financial goals. <em>Register today</em> and explore a variety of services tailored for your needs.</p>
+
+        <p>Please read the instructions carefully before filling out the form:</p>
+        <ul>
+          <li>Applicants must be above 18 years of age.</li>
+          <li>Provide valid government ID proof.</li>
+          <li>Email and phone number must be active.</li>
+          <li>Provide accurate income details.</li>
+          <li>All fields marked as required must be filled.</li>
+        </ul>
+      </section>
+
+      <center>
+      <section>
+          <form action="finance_dashboard.html" method="get">
+            <label>Full Name: </label>
+            <input type="text" placeholder="Enter your full name" required />
+            <br /><br />
+
+            <label>Email Address: </label>
+            <input type="email" placeholder="example@email.com" required />
+            <br /><br />
+
+            <label>Mobile Number: </label>
+            <input type="tel" placeholder="10-digit number" maxlength="10" minlength="10" required />
+            <br /><br />
+
+            <label>Residential Address: </label>
+            <textarea placeholder="Enter your address" required></textarea>
+            <br /><br />
+
+            <label>Date of Birth: </label>
+            <input type="date" required />
+            <br /><br />
+
+            <label>Occupation: </label>
+            <select required>
+              <option value="" selected disabled>Select your occupation</option>
+              <option value="salaried">Salaried</option>
+              <option value="business">Business</option>
+              <option value="freelancer">Freelancer</option>
+              <option value="student">Student</option>
+              <option value="retired">Retired</option>
+            </select>
+            <br /><br />
+
+            <label>Gender: </label>
+            <input type="radio" name="gender" required />Male
+            <input type="radio" name="gender" />Female
+            <input type="radio" name="gender" />Other
+            <br /><br />
+
+            <label>Services Interested In: </label>
+            <input type="checkbox" name="services" />Personal Loan
+            <input type="checkbox" name="services" />Business Loan
+            <input type="checkbox" name="services" />Credit Card
+            <input type="checkbox" name="services" />Investment Plans
+            <br /><br />
+
+            <label>Upload ID Proof: </label>
+            <input type="file" accept=".pdf,.jpg,.png" required />
+            <br /><br />
+
+            <label>Annual Income (in ₹): </label>
+            <input type="number" placeholder="Enter amount" required />
+            <br /><br />
+
+            <label>Credit Score: </label>
+            <input type="range" min="300" max="900" />
+            <br /><br />
+
+            <input type="submit" value="Register" />
+            <input type="reset" value="Reset" />
+          </form>
+      </section>
+
+      <section>
+        <h2>Learn About Finance</h2>
+        <p>Watch our short introduction video and listen to our company jingle:</p>
+
+        <video controls width="500">
+          <source src="assets/media/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <br /><br />
+
+        <audio controls loop>
+          <source src="assets/media/audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio tag.
+        </audio>
+      </section>
+    </center>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 ABC Finance. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

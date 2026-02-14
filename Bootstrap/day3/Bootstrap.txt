@@ -1,0 +1,107 @@
+BOOTSTRAP:
+
+Color:
+Primary -> Blue
+Secondary -> Grey
+Warning -> Yellow
+Dark -> Black
+Sucess -> Green
+light -> White
+Danger -> Red
+
+BreakPoints:
+Extra Small          NONE        <576px
+Small                 sm         >= 576px
+Medium                md         >=768px
+Large                 lg         >=992px
+Extra Large           xl         >=1200px
+Extra Extra Large     xxl        >=1400px
+
+
+Grid :
+class ="col"   => Column-12parts
+class ="row" 
+
+Typography:
+class ="h1"
+class ="h2"
+class ="h3"
+class ='h4'
+class ='h5'
+class ='h6'
+
+Customized Heading:
+class ="text-muted"  => Faded Description
+
+Display Heading:
+class ="display-1" => Big Size
+class ="display-2"
+class ="display-3"
+class ="display-4"
+class ="display-5"
+class ="display-6" => Small Size
+
+Naming a Source:
+class ="blockquote-footer" => Like Author Name
+class ="blockquote"
+
+<mark> => Highlight the particular Words
+
+Alignment:
+class ="text-center" => Text will align in center
+class ="text-end" => Text will align in End of the Screen
+
+Lists:
+class ="list-unstyled" => This only applies to immediate children list items.
+
+Inline:
+class = "list-inline"
+class ="list-inline-item" => it will arrage in same line
+
+Table:
+class ="table"
+scope ="col"
+scope ="row"
+
+
+Accented Table:
+class="table table-striped"  => Zebra line box 
+class="table table-dark table-striped" =>We can give any Color.
+
+Important Topics:
+Carousal
+Collapse
+Button
+BreadCrumb
+Cards
+DropDown
+Modal
+Navbar
+Toaster
+Sweet Alert
+Alert
+ToolTip
+BackGround
+Border
+Flex
+Positining
+Shadow
+sizing
+spacing
+Extended Icons => Font Awasome Website
+LAyout => Z-index, Grid ,Container, BreakPoints
+forms
+
+
+
+Improve :
+1.Object
+2.Varaiable Beharivours
+3. NEsted Object
+4. Array and Array of Object
+5. how to use dot Notation accessing
+6.Function => 3 types
+7. Array Methods
+8.Call back Function
+9.Closures
+10. File Haandling

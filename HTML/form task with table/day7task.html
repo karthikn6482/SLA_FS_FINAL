@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Company Registration</title>
+  </head>
+  <body>
+    <center>
+      <h1>Welcome to ABC Finance</h1>
+      <img src="assets/img/1.jpg" alt="Finance Company Logo" width="500" />
+    </center>
+
+    <p>Please read the instructions carefully before filling out the form:</p>
+    <ul>
+      <li>Applicants must be above 18 years of age.</li>
+      <li>Provide valid government ID proof.</li>
+      <li>Email and phone number must be active.</li>
+      <li>Provide accurate income details.</li>
+      <li>All fields marked as required must be filled.</li>
+    </ul>
+
+    <center>
+      <form action="finance_dashboard.html" method="get">
+        <label>Full Name: </label>
+        <input type="text" placeholder="Enter your full name" required />
+        <br /><br />
+
+        <label>Email Address: </label>
+        <input type="email" placeholder="example@email.com" required />
+        <br /><br />
+
+        <label>Mobile Number: </label>
+        <input type="tel" placeholder="10-digit number" maxlength="10" minlength="10" required />
+        <br /><br />
+
+        <label>Residential Address: </label>
+        <textarea placeholder="Enter your address" required></textarea>
+        <br /><br />
+
+        <label>Date of Birth: </label>
+        <input type="date" required />
+        <br /><br />
+
+        <label>Occupation: </label>
+        <select required>
+          <option value="" selected disabled>Select your occupation</option>
+          <option value="salaried">Salaried</option>
+          <option value="business">Business</option>
+          <option value="freelancer">Freelancer</option>
+          <option value="student">Student</option>
+          <option value="retired">Retired</option>
+        </select>
+        <br /><br />
+
+        <label>Gender: </label>
+        <input type="radio" name="gender" required />Male
+        <input type="radio" name="gender" />Female
+        <input type="radio" name="gender" />Other
+        <br /><br />
+
+        <label>Services Interested In: </label>
+        <input type="checkbox" name="services" />Personal Loan
+        <input type="checkbox" name="services" />Business Loan
+        <input type="checkbox" name="services" />Credit Card
+        <input type="checkbox" name="services" />Investment Plans
+        <br /><br />
+
+        <label>Upload ID Proof: </label>
+        <input type="file" accept=".pdf,.jpg,.png" required />
+        <br /><br />
+
+        <label>Annual Income (in ₹): </label>
+        <input type="number" placeholder="Enter amount" required />
+        <br /><br />
+
+        <label>Credit Score: </label>
+        <input type="range" min="300" max="900" />
+        <br /><br />
+
+        <input type="submit" value="Register" />
+        <input type="reset" value="Reset" />
+      </form>
+      <br /><br />
+      <table border="3" cellpadding="10">
+        <thead>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Mobile Number</th>
+          <th>Gender</th>
+          <th>Occupation</th>
+          <th>ID Proof</th>
+          <th>Services Interested In</th>
+          <th>Annual Income (in ₹)</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Sample1</td>
+            <td>sameple1@gmail.com</td>
+            <td>1234567890</td>
+            <td>Male</td>
+            <td>Salaried</td>
+            <td>idproof1.pdf</td>
+            <td>Personal Loan, Credit Card</td>
+            <td>500000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Sample2</td>
+            <td>sample2@gmail.com</td>
+            <td>9876054321</td>
+            <td>Female</td>
+            <td>Business</td>
+            <td>idproof2.jpg</td>
+            <td>Business Loan, Investment Plans</td>
+            <td>1100000</td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+  </body>
+</html>

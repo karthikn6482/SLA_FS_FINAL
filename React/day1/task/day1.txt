@@ -1,0 +1,158 @@
+1. Why was React introduced?
+         React was introduced by Facebook to make building dynamic and interactive user interfaces easier and faster.
+Problems before React:
+         1.Updating the UI manually with plain JavaScript or jQuery was hard.
+         2.Code became messy when the app grew bigger.
+         3.Reusing components was difficult.
+         4.React’s solution:
+         5.Component-based structure (build small reusable UI blocks).
+         6.Virtual DOM improves performance.
+        7.One-way data flow makes debugging easier.
+
+2. Difference between HTML webpage and React webpage
+
+Feature         	        HTML Webpage	                          React Webpage
+Structure	               Static HTML file	                 Dynamic components built with JavaScript
+Data Update	        Manual (you edit HTML or use JS)	       Automatic (React updates DOM for you)
+Reusability	                    Limited	                           High (components can be reused)
+Speed	                  Slower for large apps	                      Faster due to Virtual DOM
+Example	                       index.html	                            App.js, components/, etc.
+
+
+3. Difference between React and Angular
+
+Feature	                   React	                       Angular
+Type	                  Library	                  Full Framework
+Language	        JavaScript (or TypeScript)	        TypeScript
+Learning Curve          	Easier	                      Steeper
+DOM	                     Virtual DOM	             Real DOM (with change detection)
+Data Binding	           One-way                      	Two-way
+Managed By	           Meta (Facebook)	                     Google
+
+4. What is TypeScript?
+       TypeScript is a superset of JavaScript — it adds types to JavaScript code.
+Example:
+let name: string = "John"; // TypeScript
+✅ It helps catch errors early and makes big projects easier to manage.
+🛠 Compiles down to regular JavaScript.
+
+5. What is Variable Declaration and Initialization?
+           Declaration: Telling the program that a variable exists.
+let name;
+Initialization: Giving it a value.
+name = "John";
+You can also do both at once:
+let name = "John";
+
+6. What is Lexical Scope?
+       Lexical scope means a variable is accessible based on where it’s written in the code (the code structure).
+Example:
+function outer() {
+  let x = 10;
+  function inner() {
+    console.log(x); // ✅ inner can access outer’s variable
+  }
+  inner();
+}
+outer();
+Here, inner has lexical access to x.
+
+
+7. What is Block Scope?
+           Block scope means a variable is only available inside {} brackets where it’s defined.
+Example:
+{
+  let x = 5;
+  console.log(x); // ✅ works
+}
+console.log(x); // ❌ error (outside block)
+
+
+8. What is Function Scope?
+           In function scope, variables are available only inside that function.
+Example:
+function test() {
+  var x = 10;
+}
+console.log(x); // ❌ x is not defined outside
+
+
+
+9. What is Hoisting?
+Hoisting means JavaScript moves declarations to the top of their scope before execution.
+Example:
+console.log(x); // undefined
+var x = 5;
+
+JS behaves like:
+var x;
+console.log(x);
+x = 5;
+(But with let and const, hoisting still happens but they stay in the temporal dead zone, so you get an error if you use them before declaration.)
+
+
+
+10. Why is Node.js used in web development? Which came first — React, Angular, or Node?
+Why Node.js:
+Lets you use JavaScript on the server.
+Handles requests efficiently (non-blocking I/O).
+Used for building APIs and backend services.
+Order of introduction:
+AngularJS (2010)
+Node.js (2009)
+React (2013)
+👉 So Node came first, then Angular, then React.
+
+11. Vite vs CRA (Create React App)
+
+Feature	                       Vite	                       CRA (Create React App)
+Speed	           ⚡ Very fast (modern bundler)	        🐢 Slower (uses Webpack)
+Build Tool	             ESBuild + Rollup	                       Webpack
+Configuration	         Simple and modern	                     More complex
+Default Files	         Fewer files, clean                 	More files and setup
+
+
+
+🧠 What is a Closure?
+           A closure happens when a function remembers variables from the place where it was created, even after that outer function has finished running.
+🔍 Example:
+function outer() {
+  let counter = 0;  // variable inside outer
+  function inner() {
+    counter = counter + 1;
+    console.log(counter);
+  }
+  return inner;  // returning inner function
+}
+const myCounter = outer();  // outer() runs once
+myCounter();  // 1
+myCounter();  // 2
+myCounter();  // 3
+🧩 How it works:
+outer() runs → creates variable counter = 0.
+inner() is created inside outer().
+When outer() returns inner, the inner function remembers the variable counter from outer().
+Even though outer() is done, the variable counter stays alive inside inner().
+This “memory” is called a closure.
+
+
+Vite Project Structure
+my-app/
+├─ index.html
+├─ src/
+│  ├─ main.jsx
+│  ├─ App.jsx
+│  └─ assets/
+├─ package.json
+├─ vite.config.js
+
+
+CRA Project Structure
+my-app/
+├─ public/
+│  ├─ index.html
+├─ src/
+│  ├─ index.js
+│  ├─ App.js
+├─ package.json
+├─ README.md

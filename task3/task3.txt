@@ -1,0 +1,37 @@
+What is JS?
+JavaScript is a programming language used to make web pages interactive.
+It adds logic, animation, and dynamic content to a website.
+Without JS, websites would only be static with HTML and CSS.
+
+Why we use JS?
+We use JS to make webpages respond to user actions like clicks or typing.
+It helps create animations, slideshows, forms, and games.
+It improves user experience by making websites more interactive.
+
+When we use JS?
+We use JS when we want a webpage to change without reloading.
+Example: showing a popup, changing colors, or validating a form.
+It is used mostly when interaction or dynamic content is needed.
+
+Where we use JS?
+JS is used in web browsers frontend and also in servers backend using Node.js.
+It can control HTML elements, CSS styles, and handle user inputs.
+You can use JS in any part of a web project needing dynamic behavior.
+
+Types of using JS:
+
+Internal JS – written inside the <script> tag in the HTML file.
+External JS – written in a separate .js file and linked to HTML.
+Inline JS – added directly inside an HTML element’s attribute.
+
+If using JS, what happens on the webpage?
+
+The webpage becomes interactive and can react to user actions.
+JS can update text, move elements, or create animations in real time.
+It makes the site dynamic without needing to reload the page.
+
+Other Frontend Programming Languages:
+HTML – structures the content of a webpage.
+CSS – styles and designs the webpage.
+JavaScript – adds interactivity and dynamic features.
+Also, frameworks like React, Angular, and Vue.js are built on JS.

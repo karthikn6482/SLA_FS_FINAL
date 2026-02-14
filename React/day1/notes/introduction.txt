@@ -1,0 +1,142 @@
+Day1: 13th November 2025 Thursday
+React.js Notes
+
+1. Introduction
+	•	React → JavaScript library developed by Meta (Facebook).
+	•	Used for building User Interfaces (UI), especially Single Page Applications (SPAs).
+	•	Enables building reusable UI components using a component-based architecture.
+	•	Helps maintain multiple dynamic processes within a single component.
+
+⸻
+
+2. Features of React
+	•	Declarative → Describes what the UI should look like for a given state.
+	•	Component-Based → UI divided into independent, reusable components.
+	•	Virtual DOM → Speeds up updates by avoiding full-page reloads.
+	•	One-Way Data Flow → Makes debugging and data tracking easier.
+	•	Reusable Code → Components can be reused across applications.
+	•	Cross-Platform → Available for both web and mobile (React Native).
+	•	Community Support → Large ecosystem and active community.
+
+⸻
+
+3. Why React?
+	•	Fast rendering with Virtual DOM.
+	•	Component reusability.
+	•	Easy debugging and maintenance.
+	•	Supports modern JavaScript features (ES6+).
+	•	Enables development of dynamic and scalable web applications.
+
+⸻
+
+4. Prerequisites
+
+Before learning React, revise:
+	•	JavaScript Fundamentals
+	•	Scope & Closure
+	•	Global & Local Variables
+	•	Functions & Arrow Functions
+	•	Promises, Callbacks, Async/Await
+	•	Fetch API
+	•	Hoisting
+	•	Objects & Arrays
+	•	Rest, Spread Operators
+	•	Array Methods
+	•	Destructuring
+	•	ES6 Features
+	•	let, const
+	•	import/export modules
+	•	Template literals
+	•	Ternary operators
+
+⸻
+
+5. Core Concepts
+	•	DOM Manipulation → Event listeners, form handling, etc.
+	•	JSON → Converting data to and from objects.
+	•	Local Storage / Session Storage → For client-side data storage.
+	•	React → Built on pure JavaScript; understanding JS fundamentals is essential.
+
+⸻
+
+6. JSX (JavaScript XML)
+	•	JSX is a syntax extension for JavaScript.
+	•	Used to write HTML elements inside JavaScript.
+	•	Babel Compiler converts JSX and ES6+ code into browser-readable JavaScript.
+
+⸻
+
+7. Comparison Questions
+	1.	Difference between HTML page and React page.
+	2.	Difference between React and Angular.
+	3.	What is TypeScript?
+	4.	What is variable declaration and hoisting in JS?
+	5.	Why use React in development?
+	6.	Which is better: React, Angular, or Node?
+
+⸻
+
+8. JavaScript Engine
+	•	V8 Engine → Executes JavaScript code by converting it to machine code for faster execution.
+	•	React’s JSX files are compiled to JavaScript and executed by the V8 engine.
+9. Project Setup
+
+Create React App (CRA)
+	•	Command:
+npx create-react-app project-name
+Basic and minimal setup.
+	•	Recommended for React 3+ projects.
+
+Vite
+	•	Command:
+npm create vite@latest project-name
+Fast and lightweight alternative to CRA.
+	•	Recommended for React 4+ projects.
+	•	Uses Rollup and ESBuild for efficient bundling.
+
+⸻
+
+10. Package Managers
+	•	npm (Node Package Manager) → Installs and manages dependencies.
+	•	npx (Node Package Executor) → Executes packages directly.
+
+⚔️ CRA vs Vite — The Comparison
+
+Feature	                       CRA (Create React App)	                            Vite
+🏗️ Build Tool	                    Uses Webpack	                        Uses ESBuild + Rollup
+⚡ Speed	                    Slower to start and reload	            Super fast startup and instant reload
+📦 Bundle Time	         Bundles everything before starting      	Serves files on demand (no full bundle)
+🧠 Configuration	     Hidden/Complex (need eject to modify)          	Simple and easy to customize
+🧩 Default Setup	          More boilerplate files	                        Cleaner, minimal setup
+🧰 Plugin Support	          Fewer modern plugin options	             Supports many modern plugins easily
+🔄 Hot Reload (HMR)	               Slower refresh	                     Very fast HMR (Hot Module Replacement)
+🗂️ Folder Structure	    src, public, package.json, etc.	                 src, index.html, vite.config.js
+🧱 Production Build	         Uses Webpack for final build	                Uses Rollup for optimized build
+🚀 Used For	               Older React setups or beginners	             Modern, faster React + JS frameworks
+🕒 First Released               	2016 by Facebook	                     2020 by Evan You (Vue creator)
+
+
+🧩 CRA Folder Structure
+my-app/
+├─ public/
+│  ├─ index.html
+├─ src/
+│  ├─ App.js
+│  ├─ index.js
+├─ package.json
+├─ README.md
+➡️ More boilerplate and slower dev server.
+
+
+⚡ Vite Folder Structure
+my-app/
+├─ index.html
+├─ src/
+│  ├─ main.jsx
+│  ├─ App.jsx
+├─ package.json
+├─ vite.config.js
+➡️ Lighter, simpler, and much faster dev experience.
+
+
+------------------------------------------------------------------------------------------------------------------------------------
